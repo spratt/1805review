@@ -4,7 +4,12 @@
 % Review questions
 % Mostly taken from Rosen 6th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[11pt]{article}
+\documentclass{report}
+
+\usepackage{parskip}
+\usepackage{enumerate}
+
+\setlength{\parindent}{0cm}
 
 \begin{document}
 
@@ -24,14 +29,19 @@ From Rosen (6th ed.)
 
 1.4: 33) Rewrite each of these statements so that negations appear only within predicates:
 
-a) $ \neg \forall x \forall y P(x,y) $
 
-b) $ \neg \forall y \exists x P(x,y) $
+\begin{enumerate}[a)]
+\item $ \neg \forall x \forall y P(x,y) $
+\item $ \neg \forall y \exists x P(x,y) $
+\item $ \neg \forall y \forall x (P(x,y) \vee Q(x,y)) $
+\item $ \neg ( \exists x \exists y \neg P(x,y) \wedge \forall x \forall y Q(x,y)) $
+\item $ \neg \forall x ( \exists y \forall z P(x,y,z) \wedge \exists z \forall y P(x,y,z)) $
+\end{enumerate}
 
-c) $ \neg \forall y \forall x (P(x,y) \vee Q(x,y)) $
+1.6: 39) Prove that at least one of the real numbers $a_1,a_2,...,a_n$ is greater than or equal to the average of these numbers.
 
-d) $ \neg ( \exists x \exists y \neg P(x,y) \wedge \forall x \forall y Q(x,y)) $
+1.6: 40) Use Exercise 39 to show that if the first 10 positive integers are placed around a circle, in any order, there exist three integers in consecutive locations around the circle that have a sum greater than or equal to 17.
 
-e) $ \neg \forall x ( \exists y \forall z P(x,y,z) \wedge \exists z \forall y P(x,y,z)) $
+
 
 \end{document}
