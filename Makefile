@@ -3,15 +3,15 @@ TEXOPTS	= -halt-on-error
 
 PDF	= review.pdf
 
-PARTS	=
+PARTS	= 
 
-FIGURES	=
+FIGURES	= graph.pdf
 
 open:	${PDF}
 	open $< || gnome-open $<
 
 clean:
-	rm -f *.log *.aux *.dvi ${FILES}
+	rm -f *.log *.aux *.dvi ${PDF}
 
 ${PDF}:	${subst pdf,tex,${PDF}} ${PARTS} ${FIGURES}
 	${TEX} ${TEXOPTS} $<
