@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMP 1805
+% December 9 2011
+% Review questions
+% Typed up by Simon Pratt
+% Mostly taken from Rosen 6th
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+
+\usepackage{fullpage}
+\usepackage{parskip}
+\usepackage{enumitem}
+
+\begin{document}
+
+{\Huge COMP 1805 Review Questions}
+
+From Rosen (6th ed.)
+
+1.1: 33e) Construct a truth table for:
+
+\[
+(p \leftrightarrow q) \vee (\neg q \leftrightarrow r)
+\]
+
+1.2: 30) Show that the following is a tautology:
+
+\[
+(p \vee q) \wedge (\neg p \vee r) \rightarrow (q \vee r)
+\]
+
+1.4: 33) Rewrite each of these statements so that negations appear only within predicates:
+
+\begin{enumerate}[label=\alph{enumi})]
+\item $ \neg \forall x \forall y P(x,y) $
+\item $ \neg \forall y \exists x P(x,y) $
+\item $ \neg \forall y \forall x (P(x,y) \vee Q(x,y)) $
+\item $ \neg ( \exists x \exists y \neg P(x,y) \wedge \forall x \forall y Q(x,y)) $
+\item $ \neg \forall x ( \exists y \forall z P(x,y,z) \wedge \exists z \forall y P(x,y,z)) $
+\end{enumerate}
+
+1.6: 39) Prove that at least one of the real numbers $a_1,a_2,...,a_n$ is greater than or equal to the average of these numbers.
+
+1.6: 40) Use Exercise 39 to show that if the first 10 positive integers are placed around a circle, in any order, there exist three integers in consecutive locations around the circle that have a sum greater than or equal to 17.
+
+1.7: 32) Prove that $\sqrt[3]{2}$ is irrational.
+
+2.1: 19c) Find the power set of $ \{ \emptyset , \{ \emptyset \} \} $
+
+2.4: 31) Determine whether each of these sets is countable or uncountable.  For those that are countable, exhibit a one-to-one correspondence between the set of natural numbers and that set.
+
+\begin{enumerate}[label=\alph{enumi})]
+\item the negative integers
+\item the even integers
+\item the real numbers between 0 and $1/2$
+\item integers that are multiples of 7
+\end{enumerate}
+
+3.2: 24)
+
+\begin{enumerate}[label=\alph{enumi})]
+\item Show that $3x + 7$ is $\Theta (x)$
+\item Show that $2x^2+x-7$ is $\Theta (x^2)$
+\item Show that $\lfloor x + 1/2 \rfloor$ is $\Theta (x)$
+\item Show that $log(x^2+1)$ is $\Theta (log_2(x))$
+\item Show that $log_{10}x$ is $\Theta (log_2(x))$
+\end{enumerate}
+
+4.1: 21) Prove that $2^n > n^2$ if $n$ is an integer greater than 4
+
+4.1: 31) Prove that 2 divides $n^2 + n$ whenever $n$ is a positive integer
+
+4.3: 13) Where $f_n$ is the $n$th Fibonacci number, prove that
+
+\[
+f_1 + f_3 + ... + f_{2n-1} = f_{2n}
+\]
+
+5.1: 31) How many strings of eight English letters are there
+
+\begin{enumerate}[label=\alph{enumi})]
+\item that contain no vowels, if letters can be repeated?
+\item that contain no vowels, if letters cannot be repeated?
+\item that start with a vowel, if letters can be repeated?
+\item that start with a vowel, if letters cannot be repeated?
+\item that contain at least one vowel, if letters can be repeated?
+\item that contain exactly one vowel, if letters can be repeated?
+\item that start with X and contain at least one vowel, if letters can be repeated?
+\item that start and end with X and contain at least one vowel, if
+  letters can be repeated?
+\end{enumerate}
+
+5.2: 9(modified) what is the minimum number of students, each of whom
+comes from one of the 13 provinces and territories, who must be
+enrolled in a university to guarantee that there are at least 100 who
+come from the same province or territory?
+
+5.2: 15) How many numbers must be selected from the set
+$\{1,2,3,4,5,6\}$ to guarantee that at least one pair of these numbers
+add up to 7?
+
+5.3: 38) How many ways are there to select 12 countries in the United
+Nations to serve on a council if 3 are selected from a block of 45, 4
+are selected from a block of 57, and the others are selected from the
+remaining 69 countries?
+
+5.4: 9) What is the coefficient of $x^{101}y^{99}$ in the expansion of
+$(2x-3y)^{200}$?
+
+5.5: 11) How many ways are there to choose eight coins from a piggy
+bank containing 100 identical pennies and 80 identical nickels?
+
+8.1: 4) Determine whether the relation $R$ on the set of all people is reflexive, symmetric, antisymmetric, and/or transitive, where $(a,b) \in R$ if and only if
+
+\begin{enumerate}[label=\alph{enumi})]
+\item $a$ is taller than $b$
+\item $a$ and $b$ were born on the same day
+\item $a$ has the same first name as $b$
+\item $a$ and $b$ have a common grandparent
+\end{enumerate}
+
+9.1: 12) Let $G$ be an undirected graph with a loop at every vertex.  Show that the relation $R$ on the set of vertices of $G$ such that $uRv$ if and only if there is an edge associated to $\{u,v\}$ is a symmetric, reflexive relation on $G$.
+
+9.2: 6) Show that the sum, over the set of people at a party, of the number of people a person has shaken hands with, is even.  Assume that no one shakes their own hand.
+
+9.7: 1) Can five houses be connected to two utilities without connections crossing?
+
+\end{document}

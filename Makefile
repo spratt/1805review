@@ -1,18 +1,20 @@
 TEX	= pdflatex
 TEXOPTS	= -halt-on-error
 
-PDF	= review.pdf
+PROBLEMS = problems.pdf
 
-PARTS	= 
+SOLUTIONS = solutions.pdf
 
 FIGURES	= graph.pdf
 
-open:	${PDF}
+all: open_${PROBLEMS} open_${SOLUTIONS}
+
+open_%:	%
 	open $< || gnome-open $<
 
 clean:
-	rm -f *.log *.aux *.dvi ${PDF}
+	rm -f *.log *.aux *.dvi ${PROBLEMS} ${SOLUTIONS}
 
-${PDF}:	${subst pdf,tex,${PDF}} ${PARTS} ${FIGURES}
+%.pdf:	%.tex ${FIGURES}
 	${TEX} ${TEXOPTS} $<
 	${TEX} ${TEXOPTS} $<
