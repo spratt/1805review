@@ -7,7 +7,7 @@ SOLUTIONS = solutions.pdf
 
 FIGURES	= graph.pdf
 
-all: open_${PROBLEMS} open_${SOLUTIONS}
+all: ${PROBLEMS} ${SOLUTIONS} open_${PROBLEMS} open_${SOLUTIONS}
 
 open_%:	%
 	open $< || gnome-open $<
